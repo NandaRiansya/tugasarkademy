@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="hasil"></div>
+    <script>
+        class outputHasil{
+            getData = async()=>{
+                let obj = {}
+                await setTimeout(()=>{
+                    obj = {
+                        'nama':'<Risma Julianti>',
+                        'kelas':'XI-RPL1'
+                    }
+                },5000)
+                return await obj
+                }
+            setData = async (data,hail)=>{
+                document.getElementById(hasil).innerHTML = data
+            }
+        }
+
+        const OH = new outputHasil()
+        const output = async()=>{
+            const data = await OH.getData()
+            OH.setData(data,'hasil')
+        }
+        // Anynchronus
+  //  const data = new promise(function(resolve,reject){
+   //     setTimeout(function(){
+     //       resolve('RPL')
+     //   },5000)
+   // });
+   
+   //data.then(funtion(hasil){
+    //   document.getElementById('hasil').innerHTML = hasil
+    // }).catch(()=>{
+   // alert('Maaf Ada Kesalahan')
+   // })
+
+   //Asynchronus ES6
+   //const data = async()=>{
+       //await seTimeout(function(){
+           //document.getElementById('hasil').innerHTML = 'RPL'
+       //},5000)
+   //}
+   //try{
+       //data()
+   //}catch(e){
+       //console.log(e)
+   //}
+    </script>
+</body>
+</html>

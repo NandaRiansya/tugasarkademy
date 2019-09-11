@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <center><h1>KALKULATOR</h1></center>
+
+   <p><div class="kontak1">
+    <h3>PERKALIAN</h3>
+    <input id="kal1" ><br/>
+    <input id="kal2" ><br/>
+    <p id="hasil"><br/>
+    <button onclick="kali()">KALI</button><br/>
+    </div>
+
+    <p></p><center><div class="rsma">
+    <h3>PERTAMBAHAN</h3>
+    <input id="kal3"><br/>
+    <input id="kal4"><br/>
+    <p id="hasiltambah"><br/>
+   <button onclick="tambah()">tambah</button>
+   </div></center>
+
+     <p></p><div class="rsma2">
+        <h3>PEMBAGIAN</h3>
+        <input id="kal5"><br/>
+        <input id="kal6"><br/>
+        <p id="hasilbagi"><br/>
+       <button onclick="bagi()">bagi</button>
+         </div>
+    <script>
+
+        function kali(){
+            var angka1 = parseInt(document.getElementById('kal1').value)
+            var angka2 = parseInt(document.getElementById('kal2').value)
+            var hasil = angka1*angka2;
+            document.getElementById('hasil').innerHTML = hasil;
+        }
+
+        function tambah(){
+            var angka3 = parseInt(document.getElementById('kal3').value)
+            var angka4 = parseInt(document.getElementById('kal4').value)
+            var hasiltambah = angka3+angka4;
+            document.getElementById('hasiltambah').innerHTML = hasiltambah;
+        }
+
+        function bagi(){
+            var angka5 = parseInt(document.getElementById('kal5').value)
+            var angka6 = parseInt(document.getElementById('kal6').value)
+            var hasilbagi = angka5/angka6;
+        document.getElementById('hasilbagi').innerHTML = hasilbagi;
+        }
+    </script>
+</body>
+</html>

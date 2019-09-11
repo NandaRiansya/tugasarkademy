@@ -1,0 +1,38 @@
+body{
+    background-color: rgb(105, 102, 102);
+    width:260px;
+    padding: 45px;
+    margin: 25px;
+    border: 2px solid rgb(17, 17, 17);
+    border-radius:35px;
+}
+p{
+    color: white;
+    height:10px;
+}
+.kontak1{
+    background-color: rgb(16, 36, 214);
+    height:200px;
+    width:200px;
+    border-radius: 10px;
+    padding:15px;
+}
+.label{
+    border-radius: 20px;
+}
+.rsma{
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    height:200px;
+    width:200px;
+    padding: 15px;
+}
+.rsma2{
+    background-color: pink;
+    border-radius: 10px;    border-radius: 10px;
+    height: 200px;
+    width: 200px;
+    padding: 15px;
+    
+}

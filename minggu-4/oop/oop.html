@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="kontak"></div>
+    <div id="kontak1"></div>
+    <div id="kontak2"></div>
+    <div id="kontak3"></div>
+
+    <script>
+        class operasiHitung{
+            pertambahan(a,b){
+                return a+b
+        }
+            perkalian (a,b){
+                return a*b
+        }
+            pembagian(a,b){
+                return a/b
+        }
+            pengurangan(a,b){
+                return a-b
+        }
+        }
+
+        const OH = new operasiHitung()
+        document.getElementById("kontak").innerHTML = OH.pembagian(10,2);
+        document.getElementById("kontak1").innerHTML = OH.perkalian(10,2);
+        document.getElementById("kontak2").innerHTML = OH.pengurangan(10,2);
+        document.getElementById("kontak3").innerHTML = OH.pertambahan(10,2);
+
+    </script>
+</body>
+</html>
